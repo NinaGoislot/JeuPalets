@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="291dp"
+        android:layout_height="592dp"
+        android:layout_marginTop="20dp"
+        android:text="RÈGLES DU JEU 4.2 But du jeu Le but du jeu est d’envoyer le palet dans le camp adverse afin de marquer des points. Le jeu se joue en compétition de 2 ou 4 joueurs, selon le mode choisi au lancement de la partie.  4.2 Composition du jeu Le jeu est composé de :  1 palet, représenté par une balle de couleur blanche 2 (ou 4)  poussoirs de deux couleurs différentes, chacun dans un camp différent. 2 buts de deux couleurs différentes, positionnés face à face de chaque côté du terrain.  4.3 Comment jouer Le palet n’est pas déplaçable directement, mais il bouge selon les collisions qu’il rencontre. La méthode de jeu consiste donc à pousser le palet avec le poussoir afin de le déplacer sur le terrain. Un point est obtenu lorsqu’un joueur parvient à envoyer le palet dans le but du camp adverse.   Le palet apparaît dans l’un des deux camps au début de la partie de façon aléatoire. Il apparaîtra toujours dans le camp ayant perdu le point de le manche par la suite.   4.4 Interdits Il est interdit d’utiliser les poussoirs du camp adverse La ligne blanche centrale représente la limite de chaque camp, seul le palet est autorisé à la traverser. Il n’est pas possible de rentrer le palet dans son propre camp pour marquer. Le point ira au camp adverse. Il est interdit de bloquer l’accès à son but avec son poussoir pendant des périodes prolongées.  4.5 Fin de partie  La partie s’achève lorsque l’un des deux camps a marqué 10 points.   Une fois la partie achevée, il est proposé d’en recommencer une dans les mêmes conditions en cliquant sur “Revanche”. Les mêmes équipes et joueurs seront conservés. En cliquant sur “Menu principal”, les joueurs retourneront à la page d’accueil. Le score lié à chaque joueur et équipe sera mis à jour et consultable depuis l’historique. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Regles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Retour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
